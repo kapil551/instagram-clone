@@ -23,11 +23,32 @@ function Header() {
                         - I want to hide the image by defalt for "mobile view" and want to show the image only for width >= 1024px
                         
                  */}
-               <div className="relative w-24 h-24 border-2 border-red-500 hidden lg:inline-grid">
+               <div className="relative w-24 h-24 border-2 border-red-500 hidden lg:inline-grid cursor-pointer">
 
                     {/* Image */}
                     <Image
                         src="https://links.papareact.com/ocw"
+                        layout="fill"
+                        objectFit="contain"
+                    />
+
+                </div>
+
+                {/* Image Icon */}
+                {/* 
+                    Responsive styling using tailwindcss:
+                    
+                        - Always remember that the default styling that you do using tailwindcss is always for "mobile view".
+                        - We add breakpoints for responsive behavior for larger screens only.
+                    
+                    Adding responsive behavior to the "image icon" of the left section of header 
+
+                        - I want to show the "image icon" by defalt for "mobile view" and want to hide the image only for width >= 1024px
+                */}
+                <div className="relative w-10 h-10 lg:hidden flex-shrink-0 cursor-pointer">
+
+                    <Image
+                        src="https://links.papareact.com/jjm"
                         layout="fill"
                         objectFit="contain"
                     />
