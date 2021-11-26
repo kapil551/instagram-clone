@@ -1,3 +1,6 @@
+// import Image component
+import Image from "next/image";
+
 function Header() {
     return (
         <div>
@@ -5,6 +8,12 @@ function Header() {
 
             {/* Left Section of the Header */}
             <div>
+
+                {/* Image */}
+                <Image
+                    src="https://links.papareact.com/ocw"
+                    layout="fill"
+                />
                 
             </div>
 
