@@ -118,7 +118,20 @@ function Header() {
 
                         - I want to hide all other icons by default for "mobile view" and want to show them for width >= 
                    */}
-                    <PaperAirplaneIcon className="hidden h-6 md:inline-flex cursor-pointer hover:scale-125 transition-all duration-150 ease-out" />
+
+                    {/* Adding a blinking icon 
+                        
+                        animate-pulse
+                    */}
+                    <div className="border-2 border-black relative">
+                        
+                        <PaperAirplaneIcon className="hidden h-6 md:inline-flex cursor-pointer hover:scale-125 transition-all duration-150 ease-out" />
+                        <div className="border-2 border-black absolute -top-2 -right-1 text-xs w-5 h-5 bg-red-500 text-white rounded-full flex items-center justify-center animate-pulse">
+                            3
+                        </div>
+
+                    </div>
+                   
                     <PlusCircleIcon className="hidden h-6 md:inline-flex cursor-pointer hover:scale-125 transition-all duration-150 ease-out" />
                     <UserGroupIcon className="hidden h-6 md:inline-flex cursor-pointer hover:scale-125 transition-all duration-150 ease-out" />
                     <HeartIcon className="hidden h-6 md:inline-flex cursor-pointer hover:scale-125 transition-all duration-150 ease-out" />
