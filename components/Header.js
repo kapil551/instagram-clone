@@ -66,24 +66,28 @@ function Header() {
                 </div>
 
                 {/* Middle Section of the Header - Search Bar */}
-                <div className="border-2 border-green-500">
+                <div className="max-w-xs">
+                    <div className="border-2 border-green-500 relative mt-1 p-3 rounded-md">
 
-                    {/* Search Icon */}
-                    {/* 
-                        add icons using heroicons:
+                        {/* Search Icon */}
+                        {/* 
+                            add icons using heroicons:
 
-                            https://heroicons.com/
+                                https://heroicons.com/
 
-                            https://github.com/tailwindlabs/heroicons
-                    */}
-                    <div>
-                        {/* import the search icon from heroicon */}
-                        <SearchIcon className="h-5 w-5 text-gray-500 border-2 border-black" />
+                                https://github.com/tailwindlabs/heroicons
+                        */}
+                        {/* Styling the search icon */}
+                        <div className="border-2 border-black absolute inset-y-0 pl-3 flex items-center pointer-events-none">
+                            {/* import the search icon from heroicon */}
+                            <SearchIcon className="h-5 w-5 text-gray-500 border-2 border-black" />
+                        </div>
+                    
+                    {/* Search Bar */}
+                    <input type="text" placeholder="Search..." className="border-2 border-gray-300 rounded-md bg-gray-50 block w-full pl-10 sm:text-sm
+                                                                                focus:ring-black focus:border-black"/>
+
                     </div>
-                   
-                   {/* Search Bar */}
-                   <input type="text" placeholder="Search..." className="border-2 border-black"/>
-
                 </div>
 
                 {/* Right Section of the Header */}
