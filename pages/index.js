@@ -9,7 +9,8 @@ export default function Home() {
       
       <Head>
         <title>Instagram 2.0</title>
-        <link rel="icon" href="/favicon.ico" />
+        {/* Add a Instagram Favicon Icon */}
+        <link rel="icon" href="https://cdn.icon-icons.com/icons2/836/PNG/512/Instagram_icon-icons.com_66804.png" />
       </Head>
 
       {/* Header */}

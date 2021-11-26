@@ -15,7 +15,14 @@ import { HomeIcon } from "@heroicons/react/solid";
 
 function Header() {
     return (
-        <div>
+
+        /*
+            Making the header sticky i.e. stick to the top even on scrolling:
+
+                Step-1 --> position: sticky, top: 0
+                Step-2 --> assign higher z-index so that header always comes in the front of the layer (z-50)
+        */
+        <div className="shadow-sm border-b bg-white sticky top-0 z-50">
             {/* Header Parent Container */}
            <div className="border-2 border-black flex justify-between max-w-6xl items-center mx-5 lg:mx-auto">
 
@@ -123,7 +130,7 @@ function Header() {
                         
                         animate-pulse
                     */}
-                    <div className="border-2 border-black relative">
+                    <div className="border-2 border-black relative hidden h-6 md:inline-flex cursor-pointer hover:scale-125 transition-all duration-150 ease-out">
                         
                         <PaperAirplaneIcon className="hidden h-6 md:inline-flex cursor-pointer hover:scale-125 transition-all duration-150 ease-out" />
                         <div className="border-2 border-black absolute -top-2 -right-1 text-xs w-5 h-5 bg-red-500 text-white rounded-full flex items-center justify-center animate-pulse">
