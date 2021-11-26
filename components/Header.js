@@ -1,6 +1,16 @@
 // import Image component
 import Image from "next/image";
 
+// import all required icons from heroicons
+import {
+    SearchIcon,
+    PlusCircleIcon,
+    UserGroupIcon,
+    HeartIcon,
+    PaperAirplaneIcon,
+    MenuIcon,
+} from "@heroicons/react/outline";
+
 function Header() {
     return (
         <div>
@@ -55,9 +65,25 @@ function Header() {
 
                 </div>
 
-                {/* Middle Section of the Header */}
+                {/* Middle Section of the Header - Search Bar */}
                 <div className="border-2 border-green-500">
-                    <h2>Middle Section of Header</h2>
+
+                    {/* Search Icon */}
+                    {/* 
+                        add icons using heroicons:
+
+                            https://heroicons.com/
+
+                            https://github.com/tailwindlabs/heroicons
+                    */}
+                    <div>
+                        {/* import the search icon from heroicon */}
+                        <SearchIcon className="h-5 w-5 text-gray-500 border-2 border-black" />
+                    </div>
+                   
+                   {/* Search Bar */}
+                   <input type="text" placeholder="Search..." className="border-2 border-black"/>
+
                 </div>
 
                 {/* Right Section of the Header */}
